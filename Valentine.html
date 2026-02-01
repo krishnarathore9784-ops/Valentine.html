@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Be My Valentine ❤️</title>
+<style>
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.yes {
+    background-color: #ff2e63;
+    color: white;
+}
+
+.no {
+    background-color: #555;
+    color: white;
+}
+
+#result {
+    display: none;
+    margin-top: 50px;
+}
+
+.heart {
+    font-size: 120px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<h1>💖 Will You Be My Valentine? 💖</h1>
+
+<button class="yes" onclick="yesClick()">Yes ❤️</button>
+<button class="no" onclick="noClick()">No 💔</button>
+
+<div id="result">
+    <div class="heart">❤️</div>
+    <p style="font-size:22px;">
+        Tumhari ek muskurahat meri duniya roshan kar deti hai,<br>
+        Tumhara saath meri har kahani ko khoobsurat bana deta hai.<br><br>
+        💕 Happy Valentine My Love 💕
+    </p>
+</div>
+
+<script>
+function yesClick() {
+    document.getElementById("result").style.display = "block";
+}
+
+function noClick() {
+    alert("Soch lo jaan 😜 dil toot jayega 💔");
+}
+</script>
+
+</body>
+</html>
